@@ -1,36 +1,73 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Markdown Preview
 
-## Getting Started
+A modern, real-time Markdown editor and previewer built with Next.js 16 and React 19.
 
-First, run the development server:
+## Features ✨
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **📝 Live Preview**: See your markdown rendered in real-time as you type.
+- **🎨 Syntax Highlighting**: Beautiful code block highlighting for various languages.
+- **📁 Drag & Drop**: Simply drag and drop your `.md` or `.markdown` files directly into the editor to load them.
+- **⚡ GitHub Flavored Markdown**: Full support for GFM features like tables, task lists, strikethrough, and more.
+- **🌗 Resizable Split View**: Adjust the width of the editor and preview panes to your liking.
+- **👁️ Zen Mode**: Toggle the visibility of the Editor or Preview panes to focus on what matters.
+- **🌙 Dark Mode**: A sleek, dark-themed interface designed for comfortable writing.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Tech Stack 🛠️
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Framework**: [Next.js 16](https://nextjs.org/) (App Router)
+- **Library**: [React 19](https://react.dev/)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **Language**: [TypeScript](https://www.typescriptlang.org/)
+- **Markdown Engine**:
+  - [`react-markdown`](https://github.com/remarkjs/react-markdown)
+  - [`remark-gfm`](https://github.com/remarkjs/remark-gfm) (GFM support)
+  - [`rehype-highlight`](https://github.com/rehypejs/rehype-highlight) (Syntax highlighting)
+  - [`rehype-raw`](https://github.com/rehypejs/rehype-raw) (HTML support)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Getting Started 🚀
 
-## Learn More
+### Prerequisites
 
-To learn more about Next.js, take a look at the following resources:
+Ensure you have Node.js installed on your machine.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Installation
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/md-preview.git
+   cd md-preview
+   ```
 
-## Deploy on Vercel
+2. Install dependencies:
+   ```bash
+   npm install
+   # or
+   yarn install
+   # or
+   pnpm install
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+3. Run the development server:
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   # or
+   pnpm dev
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+4. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+## Usage 📖
+
+1. **Writing**: Start typing standard markdown in the left editor pane.
+2. **Loading Files**: Drag and drop any `.md` file from your computer into the browser window.
+3. **Resizing**: Drag the divider between the editor and preview panes to adjust their size.
+4. **View Controls**: Use the status bar at the bottom to:
+   - Toggle the **Editor** view on/off.
+   - Toggle the **Preview** view on/off.
+   - **Clear** the current content.
+
+## License 📄
+
+This project is open source and available under the [MIT License](LICENSE).
